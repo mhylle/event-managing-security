@@ -1,0 +1,24 @@
+{
+  "name": "schema2-security",
+  "homepage": "https://github.com/mhylle/schema2-security",
+  "authors": [
+    "mhylle <mhylle@yahoo.com>"
+  ],
+  "description": "Security module for Schema2",
+  "main": "index.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "schema2"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

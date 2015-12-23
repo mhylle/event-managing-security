@@ -1,0 +1,30 @@
+{
+  "name": "@username/schema2-security",
+  "version": "1.0.0",
+  "description": "Schema 2 security module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --reporter nyan"
+  },
+  "engines": {
+    "node": ">=4.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhylle/schema2-security.git"
+  },
+  "keywords": [
+    "schema2",
+    "security"
+  ],
+  "author": "Martin Hylleberg <mhylle@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhylle/schema2-security/issues"
+  },
+  "homepage": "https://github.com/mhylle/schema2-security",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
