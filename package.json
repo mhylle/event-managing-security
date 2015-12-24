@@ -4,7 +4,8 @@
   "description": "Schema 2 security module",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha --reporter nyan"
+    "test": "mocha --reporter spec",
+      "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
   "engines": {
     "node": ">=4.1.1"
@@ -25,6 +26,8 @@
   "homepage": "https://github.com/mhylle/schema2-security",
   "devDependencies": {
     "chai": "^3.4.1",
+    "coveralls": "^2.11.6",
+    "istanbul": "^0.4.1",
     "mocha": "^2.3.4"
   }
 }
