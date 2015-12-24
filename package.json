@@ -1,11 +1,11 @@
 {
   "name": "@mhylle/schema2-security",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Schema 2 security module",
   "main": "src/index.js",
   "scripts": {
     "test": "mocha --reporter spec",
-      "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
   "engines": {
     "node": ">=4.1.1"
