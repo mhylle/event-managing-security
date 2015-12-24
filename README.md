@@ -31,3 +31,8 @@ https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module
 a tutorial on how to make node modules...
 
 Will change into the security module, but you gotta be able to crawl before you can walk :)
+
+
+[![Build Status](https://travis-ci.org/mhylle/schema2-security.svg)](https://travis-ci.org/mhylle/schema2-security)
+
+[![Coverage Status](https://coveralls.io/repos/mhylle/schema2-security/badge.svg?branch=master&service=github)](https://coveralls.io/github/mhylle/schema2-security?branch=master)
