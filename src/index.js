@@ -4,15 +4,10 @@
 'use strict';
 
 /**
- * Adds commas to a number
- * @param {number} number
- * @param {string} locale
- * @return {string}
+ * Logs the user in.
+ * @param {credentials} expected to contain a userName and a password
+ * @return {boolean}
  */
-module.exports = function (number, locale) {
-    return number.toLocaleString(locale);
-};
-
 module.exports.login = function (credentials) {
     if (credentials) {
         if (!credentials.userName) {
