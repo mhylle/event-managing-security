@@ -12,3 +12,21 @@
 module.exports = function (number, locale) {
     return number.toLocaleString(locale);
 };
+
+module.exports.login = function (credentials) {
+    if (credentials) {
+        if (!credentials.userName) {
+            return false;
+        }
+
+        if (!credentials.password) {
+            return false;
+        }
+
+        if (credentials.userName === 'MAH' && credentials.password === 'MAH') {
+            return true;
+        }
+
+        return false;
+    }
+};
