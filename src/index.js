@@ -26,7 +26,6 @@ module.exports.login = function (credentials) {
         if (credentials.userName === 'MAH' && credentials.password === 'MAH') {
             return true;
         }
-
-        return false;
     }
+    return false;
 };
