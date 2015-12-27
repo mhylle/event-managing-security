@@ -1,20 +1,21 @@
-Number Formatter
+event-managing security
 =========
 
-A small library that adds commas to numbers
+Security module for event-managing.com
 
 ## Installation
 
-  `npm install @mhylle/number-formatter`
+  `npm install @mhylle/event-managing-security`
 
 ## Usage
 
-    var numFormatter = require('@mhylle/number-formatter');
+    var event-managing-security = require('@mhylle/event-managing-security');
+    var credentials = {userName: 'aaa', password: 'aaa'};
 
-    var formattedNum = numFormatter(35666);
+    var formattedNum = event-managing-security.login(credentials);
   
   
-  Output should be `35,666`
+  Output should be true if login was successful, false if not.
 
 
 ## Tests
@@ -25,12 +26,6 @@ A small library that adds commas to numbers
 
 In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
 
-Currently this is copy of 
-https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module-444e7585b738#.hznn5b66n
-
-a tutorial on how to make node modules...
-
-Will change into the security module, but you gotta be able to crawl before you can walk :)
 
 
 [![Build Status](https://travis-ci.org/mhylle/schema2-security.svg)](https://travis-ci.org/mhylle/schema2-security)
