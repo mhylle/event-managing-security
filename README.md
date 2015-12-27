@@ -28,6 +28,6 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 
 
 
-[![Build Status](https://travis-ci.org/mhylle/schema2-security.svg)](https://travis-ci.org/mhylle/schema2-security)
+[![Build Status](https://travis-ci.org/mhylle/schema2-security.svg)](https://travis-ci.org/mhylle/event-managing-security)
 
-[![Coverage Status](https://coveralls.io/repos/mhylle/schema2-security/badge.svg?branch=master&service=github)](https://coveralls.io/github/mhylle/schema2-security?branch=master)
+[![Coverage Status](https://coveralls.io/repos/mhylle/schema2-security/badge.svg?branch=master&service=github)](https://coveralls.io/github/mhylle/event-managing-security?branch=master)
