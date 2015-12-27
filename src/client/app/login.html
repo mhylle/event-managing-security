@@ -1,0 +1,22 @@
+<form>
+    <div ng-controller="SecurityController as vm">
+        <div class="row panel panel-info">
+
+            <div class="panel-body">
+                <div class="row">
+                    <span class="col-xs-4 text-right">Username</span>
+                    <span class="col-xs-8"><input type="text" ng-model="vm.credentials.username"></span>
+                </div>
+                <div class="row">
+                    <span class="col-xs-4 text-right">Password</span>
+                    <span class="col-xs-8"><input type="password" ng-model="vm.credentials.password"></span>
+                </div>
+                <div class="row text-center">
+                    <button class="btn btn-default" ng-click="vm.login(vm.credentials)">Login</button>
+                    <button class="btn btn-default" ng-click="vm.logout()">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

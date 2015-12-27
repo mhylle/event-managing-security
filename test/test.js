@@ -1,7 +1,7 @@
 'use strict';
 
 var expect = require('chai').expect;
-var securityService = require('../src/index');
+var securityService = require('../src/server/index');
 
 describe('#securitySvc', function () {
     it('should fail if no username was specified', function () {

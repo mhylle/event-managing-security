@@ -1,10 +1,11 @@
 {
   "name": "schema2-security",
-  "homepage": "https://github.com/mhylle/schema2-security",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mhylle/event-managing-security",
   "authors": [
-    "mhylle <mhylle@yahoo.com>"
+    "Martin Hylleberg <mhylle@yahoo.com>"
   ],
-  "description": "Security module for Schema2",
+  "description": "Security module for event-managing.com",
   "main": "index.js",
   "moduleType": [
     "globals"
@@ -17,8 +18,12 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
+    "tools/bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "bootstrap": "~3.3.6"
+  }
 }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html ng-app="schema">
+<head>
+    <style>
+        /* This helps the ng-show/ng-hide animations start at the right place. */
+        /* Since Angular has this but needs to load, this gives us the class early. */
+        .ng-hide {
+            display: none !important;
+        }
+    </style>
+    <title ng-bind="title">schema2</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <base href="/">
+
+    <!-- build:css styles/lib.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/tools/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/tools/bower_components/toastr/toastr.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/.tmp/styles.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+</head>
+<body ng-controller="ApplicationController">
+<div>Test if autoupdate works!!</div>
+<div class="wrapper"><div class="navbar-fixed-top header">
+    <div ng-include="'app/layout/header.html'"></div>
+</div>
+<div class="clearfix"></div>
+<div class="usercontent">
+    <div ui-view></div>
+</div>
+</div><div class="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="col-lg-4">
+                <p>&copy; 2015 <a href="#">Hylarious Industries & Martin Hylleberg</a></p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <ul class="list-inline">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 text-right">
+                <p>Schema Version 2.0</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- build:js js/lib.js -->
+<!-- bower:js -->
+<script src="/tools/bower_components/jquery/dist/jquery.js"></script>
+<script src="/tools/bower_components/angular/angular.js"></script>
+<script src="/tools/bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="/tools/bower_components/extras.angular.plus/ngplus-overlay.js"></script>
+<script src="/tools/bower_components/moment/moment.js"></script>
+<script src="/tools/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="/tools/bower_components/toastr/toastr.js"></script>
+<script src="/tools/bower_components/angular-animate/angular-animate.js"></script>
+<script src="/tools/bower_components/angular-route/angular-route.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js js/app.js -->
+<!-- inject:js -->
+<script src="/src/client/app/app.module.js"></script>
+<script src="/src/client/app/common/logger/logger.module.js"></script>
+<script src="/src/client/app/layout/header.module.js"></script>
+<script src="/src/client/app/security/security.module.js"></script>
+<script src="/src/client/app/tsoutput/groups/group.module.js"></script>
+<script src="/src/client/app/tsoutput/users/user.module.js"></script>
+<script src="/src/client/app/common/logger/logger.service.js"></script>
+<script src="/src/client/app/layout/header.controller.js"></script>
+<script src="/src/client/app/security/security.constants.js"></script>
+<script src="/src/client/app/security/security.controller.js"></script>
+<script src="/src/client/app/security/security.interceptor.js"></script>
+<script src="/src/client/app/security/security.service.js"></script>
+<script src="/src/client/app/security/session.js"></script>
+<script src="/src/client/app/tsoutput/groups/create/group.create.controller.interface.js"></script>
+<script src="/src/client/app/tsoutput/groups/create/group.create.controller.js"></script>
+<script src="/src/client/app/tsoutput/groups/group.interface.js"></script>
+<script src="/src/client/app/tsoutput/groups/group.service.js"></script>
+<script src="/src/client/app/tsoutput/groups/list/group.list.controller.interface.js"></script>
+<script src="/src/client/app/tsoutput/groups/list/group.list.controller.js"></script>
+<script src="/src/client/app/tsoutput/groups/management/groupmanagement.controller.interface.js"></script>
+<script src="/src/client/app/tsoutput/groups/management/groupmanagement.controller.js"></script>
+<script src="/src/client/app/tsoutput/users/create/user.create.controller.interface.js"></script>
+<script src="/src/client/app/tsoutput/users/create/user.create.controller.js"></script>
+<script src="/src/client/app/tsoutput/users/list/user.list.controller.interface.js"></script>
+<script src="/src/client/app/tsoutput/users/list/user.list.controller.js"></script>
+<script src="/src/client/app/tsoutput/users/management/usermanagement.controller.interface.js"></script>
+<script src="/src/client/app/tsoutput/users/management/usermanagement.controller.js"></script>
+<script src="/src/client/app/tsoutput/users/user.interface.js"></script>
+<script src="/src/client/app/tsoutput/users/user.service.js"></script>
+<!-- endinject -->
+
+<!-- inject:templates:js -->
+<!-- endinject -->
+<!-- endbuild -->
+</body>
+</html>
