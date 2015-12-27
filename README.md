@@ -12,7 +12,7 @@ Security module for event-managing.com
     var event-managing-security = require('@mhylle/event-managing-security');
     var credentials = {userName: 'aaa', password: 'aaa'};
 
-    var formattedNum = event-managing-security.login(credentials);
+    var loginResult = event-managing-security.login(credentials);
   
   
   Output should be true if login was successful, false if not.
