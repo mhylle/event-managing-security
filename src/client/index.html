@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="event-managing.security">
+<head>
+    <style>
+        /* This helps the ng-show/ng-hide animations start at the right place. */
+        /* Since Angular has this but needs to load, this gives us the class early. */
+        .ng-hide {
+            display: none !important;
+        }
+    </style>
+    <title ng-bind="title">schema2</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <base href="/">
+
+    <!-- build:css styles/lib.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/.tmp/styles.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+</head>
+<body>
+<div>Test if autoupdate works!!</div>
+
+<div class="usercontent">
+    <form>
+        <div ng-controller="SecurityController as vm">
+            <div class="row panel panel-info">
+
+                <div class="panel-body">
+                    <div class="row">
+                        <span class="col-xs-4 text-right">Username</span>
+                        <span class="col-xs-8"><input type="text" ng-model="vm.credentials.username"></span>
+                    </div>
+                    <div class="row">
+                        <span class="col-xs-4 text-right">Password</span>
+                        <span class="col-xs-8"><input type="password" ng-model="vm.credentials.password"></span>
+                    </div>
+                    <div class="row text-center">
+                        <button class="btn btn-default" ng-click="vm.login(vm.credentials)">Login</button>
+                        <button class="btn btn-default" ng-click="vm.logout()">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+</div>
+
+
+<!-- build:js js/lib.js -->
+<!-- bower:js -->
+<script src="/tools/bower_components/jquery/dist/jquery.js"></script>
+<script src="/tools/bower_components/angular/angular.js"></script>
+<script src="/tools/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js js/app.js -->
+<!-- inject:js -->
+<script src="/src/client/app/security.module.js"></script>
+<script src="/src/client/app/security.constants.js"></script>
+<script src="/src/client/app/security.controller.js"></script>
+<script src="/src/client/app/security.interceptor.js"></script>
+<script src="/src/client/app/security.service.js"></script>
+<script src="/src/client/app/session.js"></script>
+<!-- endinject -->
+
+<!-- inject:templates:js -->
+<!-- endinject -->
+<!-- endbuild -->
+</body>
+</html>
