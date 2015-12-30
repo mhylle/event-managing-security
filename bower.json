@@ -1,29 +1,40 @@
 {
-  "name": "schema2-security",
-  "version": "0.0.1-19",
-  "homepage": "https://github.com/mhylle/event-managing-security",
-  "authors": [
-    "Martin Hylleberg <mhylle@yahoo.com>"
-  ],
-  "description": "Security module for event-managing.com",
-  "main": "index.js",
-  "moduleType": [
-    "globals"
-  ],
-  "keywords": [
-    "schema2"
-  ],
-  "license": "MIT",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "tools/bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "angular": "~1.4.8",
-    "bootstrap": "~3.3.6"
-  }
+    "name": "event-managing-security",
+    "version": "0.0.1-25",
+    "homepage": "https://github.com/mhylle/event-managing-security",
+    "authors": [
+        "Martin Hylleberg <mhylle@yahoo.com>"
+    ],
+    "description": "Security module for event-managing.com",
+    "main": "index.js",
+    "moduleType": [
+        "globals"
+    ],
+    "keywords": [
+        "event-managing"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "tools/bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "~1.4.8",
+        "angular-ui": "~0.4.0",
+        "jquery": "~2.1.4",
+        "bootstrap": "~3.3.6"
+    },
+    "overrides": {
+        "bootstrap": {
+            "main": [
+                "dist/js/bootstrap.js",
+                "dist/css/bootstrap.css",
+                "less/bootstrap.less"
+            ]
+        }
+    }
 }

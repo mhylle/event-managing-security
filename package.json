@@ -1,6 +1,6 @@
 {
   "name": "@mhylle/event-managing-security",
-  "version": "0.0.1-19",
+  "version": "0.0.1-25",
   "description": "event-managing security module",
   "main": "src/server/index.js",
   "scripts": {
